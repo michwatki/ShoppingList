@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Shopping List</title>
+    <link rel="stylesheet" href="style.css" />
+    <script type="module" src="script.js"></script>
+  </head>
+
+  <body class="maincontent">
+    <header class="siteheader"></header>
+
+    <section id="shopping-list">
+      <div id="list-heading">
+        <h2>Shopping List <span class="total">(0 items)</span></h2>
+        <input
+          class="new"
+          id="item"
+          type="text"
+          placeholder="Bread, Milk, Eggs, etc"
+        />
+        <input class="amount" id="item-amount" type="number" value="1" />
+        <button class="add">Add Item</button>
+        <div id="note">
+          <h3>Note:</h3>
+          <p>
+            You can add your list of groceries here. Soon, you'll be able to
+            edit and remove items from the list too!
+          </p>
+        </div>
+      </div>
+      <hr />
+
+      <div id="list">
+        <ul class="items"></ul>
+      </div>
+    </section>
+  </body>
+</html>
